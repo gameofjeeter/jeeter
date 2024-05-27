@@ -1,0 +1,152 @@
+@font-face {
+  font-family: "JejuHallasan";
+  src: url("https://db.onlinewebfonts.com/t/2da952d097bffd198ec0f0aa3fdd6804.eot");
+  src: url("https://db.onlinewebfonts.com/t/2da952d097bffd198ec0f0aa3fdd6804.eot?#iefix") format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/2da952d097bffd198ec0f0aa3fdd6804.woff2") format("woff2"),
+    url("https://db.onlinewebfonts.com/t/2da952d097bffd198ec0f0aa3fdd6804.woff") format("woff"),
+    url("https://db.onlinewebfonts.com/t/2da952d097bffd198ec0f0aa3fdd6804.ttf") format("truetype"),
+    url("https://db.onlinewebfonts.com/t/2da952d097bffd198ec0f0aa3fdd6804.svg#JejuHallasan") format("svg");
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(180deg, #272727 0%, #646456 100%);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo {
+  position: absolute;
+  top: 35px;
+  right: 40px;
+}
+
+.logo img {
+  height: 300px;
+  width: 400px;
+}
+
+.imageContainer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 455px);
+  gap: 10px;
+}
+
+.imageWrapper {
+  position: relative;
+  text-align: center;
+}
+
+.imageWrapper img {
+  height: 100px;
+  width: 250px;
+}
+
+.textOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'JejuHallasan';
+  font-size: 25px; /* Fixed font size for desktop */
+  font-weight: 600;
+  line-height: 25px; /* Adjust line height accordingly */
+  color: #5E2F2F;
+  padding: 2px;
+}
+
+.backgroundImage {
+  position: absolute;
+  left: 0px;
+  top: 114px;
+  bottom: 0px;
+}
+
+.backgroundImage img {
+  height: 600px;
+  width: 800px;
+}
+
+.leftSideImage {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 20vw; /* Adjust width for smaller screens */
+  max-width: 200px; /* Maximum width for smaller screens */
+  height: auto;
+}
+
+.leftSideImage img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .logo {
+    top: 2vh;
+    right: 4vw;
+  }
+
+  .logo img {
+    height: 20vh;
+    width: 30vw;
+  }
+
+  .imageContainer {
+    margin-top: 5vh;
+    height: auto;
+  }
+
+  .imageWrapper img {
+    height: 8vh;
+    width: 20vw;
+  }
+
+  .textOverlay {
+    font-size: 4vw; /* Adjust font size for smaller screens */
+    line-height: 4vw; /* Adjust line height accordingly */
+  }
+
+  .backgroundImage {
+    top: auto;
+    bottom: 2vh;
+  }
+
+  .backgroundImage img {
+    height: auto;
+    width: 100%;
+    max-width: 60vw;
+  }
+
+  .leftSideImage {
+    width: 60vw; /* Adjust width for smaller screens */
+    max-width: 250px; /* Maximum width for smaller screens */
+  }
+}
+
+/* iPads, Tablets */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .textOverlay {
+    font-size: 20px; /* Adjust font size for iPads and tablets */
+    line-height: 20px; /* Adjust line height accordingly */
+  }
+
+  .leftSideImage {
+    width: 80vw; /* Adjust width for tablets */
+    max-width: 400px; /* Maximum width for tablets */
+  }
+}
+
+/* Desktops, large screens */
+@media (min-width: 1025px) {
+  .leftSideImage {
+    height: 600px; /* Fixed height for desktops and large screens */
+  }
+}

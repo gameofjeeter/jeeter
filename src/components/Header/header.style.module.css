@@ -1,0 +1,88 @@
+/* header.style.module.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: #272727;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top:0;
+}
+
+.logo {
+  height: 130px;
+  width: auto;
+  margin-left: 100px;
+}
+
+.nav {
+  padding-right: 80px;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav li {
+  padding-right: 30px;
+  margin-right: 20px;
+  font-size: 24px;
+  font-family: 'JejuHallasan', sans-serif;
+  margin-left: 20px;
+  position: relative;
+}
+
+.nav li:last-child {
+  padding-right: 0;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  transform: translateY(-50%);
+  height: 70%;
+  background-color: white;
+  width: 4px;
+}
+/* Update styles for mobile screens */
+/* Update styles for mobile screens */
+@media (max-width: 760px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    height:60px;
+    margin-left: 0;
+    margin-bottom: 2px;
+  }
+
+  .nav {
+    padding-right: 0;
+    font-family:10px;
+  }
+
+  .nav li:not(:last-child)::after {
+    right: 0; /* Adjust the position of the vertical line */
+  }
+}
+
+/* Reset the vertical line position for desktop screens */
+@media (min-width: 761px) {
+  .nav li:not(:last-child)::after {
+    right: -10px; /* Reset to the original position */
+  }
+}
