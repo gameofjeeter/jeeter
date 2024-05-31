@@ -11,23 +11,28 @@ const Modal = ({ isOpen, onClose }) => {
         <br/>
 
         <h2 className={styles.modalHeading}>Pick Link</h2>
-        <div className={styles.modalButton}>
+        <a href="https://dexscreener.com/" target="_blank" className={styles.modalButton}>
           <span className={styles.modalButtonText}>Dexscreener</span>
         
-        </div>
-        <div className={styles.modalButton}>
-          <span className={styles.modalButtonText}>Raydium</span>
+        </a>
+        <a href="https://pump.fun/" target="_blank" className={styles.modalButton}>
+          <span className={styles.modalButtonText}>Pump Fun</span>
         
-        </div>
-        <div className={styles.modalButton}>
+        </a>
+        <a href="https://birdeye.so/" target="_blank" className={styles.modalButton}>
           <span className={styles.modalButtonText}>Brideye</span>
           
-        </div>
+        </a>
         <div>
         <div className={styles.iconContainer}>
           
-          <img src="/image/image 1.png" alt="" />
-          <img src="/image/image 2.png" alt="" />
+          <a href="https://twitter.com/GameOfGeeters" target="_blank" rel="noopener noreferrer">
+             <img src="/image/image 1.png" alt="" />
+          </a>
+          <a href="https://t.me/gojeeters">
+              <img src="/image/image 2.png" alt="" target="_blank" />
+          </a>
+          
         </div>
         
         </div>

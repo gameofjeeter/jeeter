@@ -20,22 +20,23 @@
 .logo {
   position: absolute;
   top: 35px;
-  right: 40px;
+  right: 100px;
 }
 
 .logo img {
-  height: 300px;
+  height: 270px;
   width: 400px;
 }
 
 .imageContainer {
-  margin-top: 20px;
+  
+  margin-top: 45px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: calc(100vh - 455px);
-  gap: 10px;
+  gap: 0px;
 }
 
 .imageWrapper {
@@ -64,13 +65,13 @@
 .backgroundImage {
   position: absolute;
   left: 0px;
-  top: 114px;
-  bottom: 0px;
+  top: 110px;
+  bottom: 40px;
 }
 
 .backgroundImage img {
-  height: 600px;
-  width: 800px;
+  height: 530px;
+  width: 760px;
 }
 
 .leftSideImage {

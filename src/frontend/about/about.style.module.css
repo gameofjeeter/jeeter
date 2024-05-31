@@ -1,6 +1,7 @@
 .backgroundContainer {
     background-color: #646456;
     position: relative;
+    overflow: hidden;
 }
 
 .contentContainer {
@@ -17,54 +18,63 @@
 .leftImageContainer {
     flex: 0 0 auto;
     margin-right: 20px;
-    margin-top: 40px;
+    margin-left:5px;
+    margin-top: 60px;    
     padding-top: 100px;
 }
 
 .leftImage {
-    height: 400px;
+    height: 480px;
     width: 550px;
 }
 
 .rightContent {
-    padding: 120px;
+    padding: 80px;
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     z-index: 1;
-    position: relative; /* Ensure relative positioning for loading animation */
+    position: relative;
+     /* Ensure relative positioning for loading animation */
 }
 
 .heading {
     font-family: 'JejuHallasan';
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 600;
+    align-items: center;
     color: white;
     margin-bottom: 15px;
     margin-top: 50px;
+    margin-left:60px;
     text-border: 1px solid black;
+    text-shadow: 2px 2px 5px black;
 }
 
 .paragraphContainer {
-    padding: 20px;
+    padding-left: 10px;
     margin-bottom: 30px;
+    padding-right: 1px
 }
 
 .paragraph {
     font-family: 'Krub';
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 32.5px;
+    line-height: 33px;
     text-align: center;
+    margin-left:1.5rem;
+    margin-right:0.3rem;
     color: #E0C053;
     margin-bottom: 0;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 5px black;
 }
 
 .button {
     font-family: 'JejuHallasan';
     padding: 10px 20px;
+    margin-left:40px;
     font-size: 18px;
     background-color: #E0C053;
     color: black;
@@ -77,24 +87,46 @@
 
 .backgroundImage {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 700px;
+    top: 140px;
+    right: 1.4rem;
+    bottom: 1px;
+    width: 709px;
     background-image: url("/image/IMG_06291.png");
-    background-size: cover;
+    background-size: contain;
     opacity: 0.7;
     z-index: 0;
+    background-repeat: no-repeat;
 }
 
 .newImage {
+    width: 100%;
+}
+.monsterContainer{
     position: absolute;
-    bottom: 0;
+    bottom: -129px;
     right: 40px;
-    height: 200px;
+    max-width: 200px;
     z-index: 2;
     opacity: 0.9;
+    transition: all 0.6s ease-in-out;
 }
+
+.monsterContainer.activeMonster{ 
+    bottom: 0;
+}
+.monsterContainer span { 
+    position: absolute;
+    top: 50%;
+    left: -22%;
+    color: white;
+    font-family: 'JejuHallasan';
+    visibility: hidden;
+}
+
+.monsterContainer.activeMonster span { 
+    visibility:visible;
+}
+
 
 /* Loading animation */
 .loadingAnimation {

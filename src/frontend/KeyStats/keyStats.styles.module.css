@@ -20,7 +20,7 @@
 }
 
 .leftImage {
-    height: 400px;
+    height: 490px;
     width: 550px;
     margin-top: 200px;
 }
@@ -42,15 +42,18 @@
     color: white;
     margin-bottom: 15px;
     margin-top: 50px;
+    margin-left:60px;
     padding: 10px;
+    text-shadow:2px 2px 5px black;
 }
 
 .additionalContent {
     
     font-size: 25px;
     font-weight: 400;
-    line-height: 52px;
+    line-height: 40px;
     text-align: center;
+    margin-left:60px;
     color: white;
     text-shadow: 2px 2px 2px black;
 }

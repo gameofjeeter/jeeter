@@ -4,6 +4,7 @@ import styles from './about.style.module.css';
 
 const About = () => {
   const [showLoading, setShowLoading] = useState(true);
+  const [activeMonster, setactiveMonster] = useState(false);
 
   useEffect(() => {
     // Simulate loading delay
@@ -35,12 +36,14 @@ const About = () => {
               <>
                 {/* Heading */}
                 <h1 className={styles.heading}>
-                  About Us
+                  About Us !
                 </h1>
                 {/* Paragraph */}
                 <div className={styles.paragraphContainer}>
                   <p className={styles.paragraph}>
-                    Game of Jeeters is Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla ...........
+                    Game of Jeeters is Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla 
+                    Bla Bla Bla Bla Bla Bla Bla Bla BlaBla Bla Bla Bla Bla Bla Bla Bla 
+                            Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla ...........
                   </p>
                 </div>
                 {/* Button */}
@@ -53,8 +56,11 @@ const About = () => {
         </div>
         {/* Background Image */}
         <div className={styles.backgroundImage} />
-        {/* New Image */}
-        <img src="/image/IMG_06281.png" alt="" className={styles.newImage} />
+          {/* New Image */}
+            <div className={activeMonster?styles.monsterContainer + ' ' + styles.activeMonster:styles.monsterContainer} onClick={()=>{setactiveMonster(!activeMonster)}}>
+                <img src="/image/IMG_0628.png" alt="" className={styles.newImage} />
+                <span>Nothing<br/>Happen<br/>Bitch!</span>
+            </div>
       </div>
     </>
   );

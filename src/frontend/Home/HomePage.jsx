@@ -20,7 +20,7 @@ const HomePage = () => {
         <img src="/image/IMG_06221.png" alt="Background" />
       </div>
       <div id="logo" className={styles.logo}>
-        <Link to="/">
+        <Link to="">
         <img src="/image/IMG_06161.png" alt="Logo" />
         </Link>
         
@@ -33,9 +33,9 @@ const HomePage = () => {
             <img src="/image/IMG_0623.png" alt="" />
             <div className={styles.textOverlay}>Key State</div>
           </Link>
-          <Link  className={styles.imageWrapper}>
+          <Link  className={styles.imageWrapper} onClick={handleOpenModal}>
             <img src="/image/IMG_0623.png" alt="" />
-            <div className={styles.textOverlay}><button  onClick={handleOpenModal}>Link</button>
+            <div className={styles.textOverlay}><button  >Link</button>
           </div>
           </Link>
         </div>
