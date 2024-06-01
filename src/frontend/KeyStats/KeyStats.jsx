@@ -41,9 +41,9 @@ const KeyStats = () => {
                 </h1>
                 {/* Additional Content */}
                 <div className={styles.additionalContent}>
-                  <p className={styles.highlight}>Max Total Supply:<br /> <span>499,980,970,575.97</span></p>
-                  <p className={styles.highlight}>FDMC: <span>$25,055,739.26</span></p>
-                  <p className={styles.highlight}>Holders: <span>30,243</span></p>
+                  <p className={styles.highlight}>Initial Supply:<br /> <span>1,000,000,000</span></p>
+                  <p className={styles.highlight}>Total Burned: <span>N/A</span></p>
+                  <p className={styles.highlight}>Total Supply: <span>1,000,000,000</span></p>
                 </div>
               </>
             )}
