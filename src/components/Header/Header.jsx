@@ -26,7 +26,7 @@ const Header = () => {
             <Link to="/about_us">About</Link>
           </li>
           <li>
-            <Link to="/key-stats">Key Stat</Link>
+            <Link to="/key-stats">Key Stats</Link>
           </li>
           <li>
             <button style={{ color: 'white' }} onClick={handleOpenModal}>Link</button>
