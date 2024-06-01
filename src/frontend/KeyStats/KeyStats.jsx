@@ -37,7 +37,7 @@ const KeyStats = () => {
             {showContent && (
               <>
                 <h1 className={styles.heading}>
-                  Key Status
+                  Key Stats
                 </h1>
                 {/* Additional Content */}
                 <div className={styles.additionalContent}>
