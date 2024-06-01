@@ -31,7 +31,7 @@ const HomePage = () => {
           </Link>
           <Link to="/key-stats" className={styles.imageWrapper}>
             <img src="/image/IMG_0623.png" alt="" />
-            <div className={styles.textOverlay}>Key State</div>
+            <div className={styles.textOverlay}>Key Stats</div>
           </Link>
           <Link  className={styles.imageWrapper} onClick={handleOpenModal}>
             <img src="/image/IMG_0623.png" alt="" />
