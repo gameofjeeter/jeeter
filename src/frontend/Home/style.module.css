@@ -29,7 +29,6 @@
 }
 
 .imageContainer {
-  
   margin-top: 45px;
   display: flex;
   flex-direction: column;
@@ -66,7 +65,9 @@
   position: absolute;
   left: 0px;
   top: 110px;
-  bottom: 40px;
+  bottom: 0;
+  display: flex;
+  align-items: end;
 }
 
 .backgroundImage img {
@@ -87,49 +88,108 @@
   max-width: 100%;
   height: auto;
 }
-
+@media (min-width: 768px) {
+  .NavMobileLink img {
+      display: none;
+  }
+  .enterText span{
+    display:none;
+  }
+}
 /* Mobile responsiveness */
 @media (max-width: 480px) {
   .logo {
-    top: 2vh;
-    right: 4vw;
+    right: 0;
+    
   }
+ 
+ .NavMobileLink{
+  position:absolute;
+  height:15vh;
+  width:100vh;
+  bottom:7vh;
+  z-index:9;
+}
+.NavMobileLink {
+  position: absolute; /* Position the container absolutely */
+  bottom: 4vh; /* Align the container to the bottom */
+  left: 0; /* Align the container to the left */
+  width: 100%; /* Ensure the container spans the entire width */
+}
+
+.enterText {
+  position: absolute; /* Position the text absolutely */
+  bottom: 30px; /* Adjust as needed to position the text */
+  left: 50%; /* Align the text horizontally */
+  transform: translateX(-50%); /* Center the text horizontally */
+  z-index: 10; /* Ensure the text appears on top of the image */
+}
+
+.enterText span {
+  color: white; /* Set text color */
+  font-family: "JejuHallasan"; /* Set font family */
+  font-size: 50px; /* Set font size */
+  font-weight: 600; /* Set font weight */
+}
 
   .logo img {
-    height: 20vh;
-    width: 30vw;
+    height: 28vh;
+    width: 100vw; /* Adjust width to make it more prominent */
   }
 
   .imageContainer {
-    margin-top: 5vh;
-    height: auto;
-  }
-
-  .imageWrapper img {
-    height: 8vh;
-    width: 20vw;
-  }
-
-  .textOverlay {
-    font-size: 4vw; /* Adjust font size for smaller screens */
-    line-height: 4vw; /* Adjust line height accordingly */
+    display: none; /* Hide the image buttons on mobile */
   }
 
   .backgroundImage {
-    top: auto;
-    bottom: 2vh;
-  }
-
-  .backgroundImage img {
     height: auto;
-    width: 100%;
-    max-width: 60vw;
+    left: 0px;
+    top: auto;
+    bottom: 173px;
   }
 
-  .leftSideImage {
-    width: 60vw; /* Adjust width for smaller screens */
-    max-width: 250px; /* Maximum width for smaller screens */
-  }
+ 
+.leftSideImage img {
+  width: 100vh;
+  height:30vh;
+  object-fit: cover; /* Ensure image covers the container */
+}
+
+.mobileNav {
+  position:absolute;
+  top:32vh;
+  left:50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translate(-50%);
+
+}
+
+.mobileImageWrapper {
+  position: relative;
+  text-align: center;
+}
+
+.mobileImage {
+  height: 100px;
+  width: 250px;
+}
+
+.mobileTextOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'JejuHallasan';
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 25px;
+  color: #5E2F2F;
+  padding: 2px;
+}
+
+
 }
 
 /* iPads, Tablets */

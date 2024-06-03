@@ -4,7 +4,7 @@ import styles from './keyStats.styles.module.css';
 
 const KeyStats = () => {
   const [showContent, setShowContent] = useState(false);
-
+ 
   useEffect(() => {
     // Simulate loading delay
     const timer = setTimeout(() => {

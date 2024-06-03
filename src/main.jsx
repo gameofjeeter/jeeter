@@ -15,6 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Routes>
            
         <Route path="/" element={<HomePage />} />
+        
         <Route path="/about_us" element={<About />} />
         <Route path="/key-stats" element={<KeyStats />} />
         <Route path="*" element={<Navigate to="/" replace />} />  

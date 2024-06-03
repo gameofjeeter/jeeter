@@ -4,8 +4,10 @@ import { Link } from "react-router-dom";
 import Modal from '../../components/Modal/Modal.jsx'
 const HomePage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-
-
+  const [isEntered,setIsEntered] =useState(false); 
+  const handleEnterPress = () => {
+    setIsEntered(true);
+  };
   const handleOpenModal = () => {
     setIsModalOpen(true);
   };
@@ -16,6 +18,8 @@ const HomePage = () => {
 
   return (
     <div className={styles.container}>
+    {!isEntered && (
+      <>
       <div className={styles.backgroundImage}>
         <img src="/image/IMG_06221.png" alt="Background" />
       </div>
@@ -40,7 +44,35 @@ const HomePage = () => {
           </Link>
         </div>
       </div>
-       <Modal isOpen={isModalOpen} onClose={handleCloseModal} />
+        
+            <Link onClick={handleEnterPress}>
+                <div className={styles.NavMobileLink}>
+                    <img src="./image/IMG_06241.png" alt="" />
+                    <div className={styles.enterText}>
+                        <span>Enter</span>
+                    </div>
+                </div>
+             </Link>
+             </>
+      )} {isEntered &&(
+
+        <div className={styles.mobileNav}>
+          <Link to="/about_us" className={styles.mobileImageWrapper}>
+            <img src="/image/IMG_0623.png" alt="" className={styles.mobileImage} />
+            <div className={styles.mobileTextOverlay}>About</div>
+          </Link>
+          <Link to="/key-stats" className={styles.mobileImageWrapper}>
+            <img src="/image/IMG_0623.png" alt="" className={styles.mobileImage} />
+            <div className={styles.mobileTextOverlay}>Key State</div>
+          </Link>
+          <Link className={styles.mobileImageWrapper} onClick={handleOpenModal}>
+            <img src="/image/IMG_0623.png" alt="" className={styles.mobileImage} />
+            <div className={styles.mobileTextOverlay}><button>Link</button></div>
+          </Link>
+        </div>
+      )} 
+         
+         <Modal isOpen={isModalOpen} onClose={handleCloseModal} />
     </div>
   );
 }
