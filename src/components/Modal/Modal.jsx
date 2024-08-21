@@ -15,7 +15,7 @@ const Modal = ({ isOpen, onClose }) => {
           <span className={styles.modalButtonText}>Dexscreener</span>
         
         </a>
-        <a href="https://sunpump.meme/" target="_blank" className={styles.modalButton}>
+        <a href="https://sunpump.meme/token/TGHZd3mcQdhGzRew7WJeK9bFss8ujEqvye" target="_blank" className={styles.modalButton}>
           <span className={styles.modalButtonText}>Sun Pump</span>
         
         </a>
