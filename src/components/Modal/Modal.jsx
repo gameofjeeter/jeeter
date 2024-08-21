@@ -26,10 +26,10 @@ const Modal = ({ isOpen, onClose }) => {
         <div>
         <div className={styles.iconContainer}>
           
-          <a href="https://twitter.com/GameOfJeeters" target="_blank" rel="noopener noreferrer">
+          <a href="https://x.com/GOJTRX" target="_blank" rel="noopener noreferrer">
              <img src="/image/image 1.png" alt="" />
           </a>
-          <a href="https://t.me/gojeeters">
+          <a href="https://t.me/gojeets">
               <img src="/image/image 2.png" alt="" target="_blank" />
           </a>
           
