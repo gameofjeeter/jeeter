@@ -29,9 +29,9 @@ const HomePage = () => {
         </Link>
         
         <div className={styles.imageContainer}>
-          <Link to="/about_us" className={styles.imageWrapper}>
+          <Link to="/https://www.play.gameofjeeters.com" className={styles.imageWrapper}>
             <img src="/image/IMG_0623.png" alt="" />
-            <div className={styles.textOverlay}>About</div>
+            <div className={styles.textOverlay}>Play</div>
           </Link>
           <Link to="/key-stats" className={styles.imageWrapper}>
             <img src="/image/IMG_0623.png" alt="" />
@@ -59,7 +59,7 @@ const HomePage = () => {
         <div className={styles.mobileNav}>
           <Link to="/about_us" className={styles.mobileImageWrapper}>
             <img src="/image/IMG_0623.png" alt="" className={styles.mobileImage} />
-            <div className={styles.mobileTextOverlay}>About</div>
+            <div className={styles.mobileTextOverlay}>Unavailable</div>
           </Link>
           <Link to="/key-stats" className={styles.mobileImageWrapper}>
             <img src="/image/IMG_0623.png" alt="" className={styles.mobileImage} />
