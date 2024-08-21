@@ -15,8 +15,8 @@ const Modal = ({ isOpen, onClose }) => {
           <span className={styles.modalButtonText}>Dexscreener</span>
         
         </a>
-        <a href="https://pump.fun/" target="_blank" className={styles.modalButton}>
-          <span className={styles.modalButtonText}>Pump Fun</span>
+        <a href="https://sunpump.meme/" target="_blank" className={styles.modalButton}>
+          <span className={styles.modalButtonText}>Sun Pump</span>
         
         </a>
         <a href="https://birdeye.so/" target="_blank" className={styles.modalButton}>
